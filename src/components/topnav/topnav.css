@@ -1,0 +1,91 @@
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    height: var(--topnav-height);
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - var(--sidebar-width));
+    background-color: var(--main-bg);
+    z-index: 999;
+}
+
+.topnav__search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-color: (--main-bg);
+    box-shadow: var(--box-shadow);
+}
+
+.topnav__search > input {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg);
+    border-radius: var(--border-radius);
+    padding: 10px 60px 10px 20px;
+    color: var(--txt-color);
+    font-size: 1rem;
+}
+
+.topnav__search > i {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+}
+
+.topnav__right {
+    display: flex;
+    align-items: center;
+}
+
+.topnav__right-item ~ .topnav__right-item {
+    margin-left: 20px;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.notification-item:hover {
+    background-color: var(--second-bg);
+}
+
+.notification-item > i {
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+.notification-item--text{
+    font-size: 14px;
+}
+
+.topbar__right-user {
+    display: flex;
+    align-items: center;
+}
+
+.topbar__right-user__image {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.topbar__right-user__image > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.topbar__right-user__name {
+    font-size: 1rem;
+    font-weight: 600;
+}
